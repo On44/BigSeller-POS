@@ -1,0 +1,87 @@
+.dashboard-container {
+  padding: 20px;
+  background-color: #f4f4f9; /* Light background for better contrast */
+}
+
+.metric-box {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease-in-out; /* Hover effect */
+}
+
+.metric-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.chart-card {
+  padding: 20px;
+  text-align: center;
+  background-color: white; /* White background for charts */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+}
+
+.transaction-card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Ensure table is scrollable on smaller screens */
+}
+
+.transaction-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-card th, .transaction-card td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Subtle border for rows */
+}
+
+.transaction-card tr:hover {
+  background-color: #f1f1f1; /* Row hover effect */
+}
+
+.progress-card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  margin-top: 10px;
+  height: 25px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+@media (max-width: 600px) {
+  .metric-box, .chart-card, .transaction-card, .progress-card {
+    margin-bottom: 20px; /* Add space between elements on smaller screens */
+  }
+}

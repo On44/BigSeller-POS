@@ -1,0 +1,13 @@
+.inventory-table {
+    margin-top: 20px;
+  }
+  
+  .inventory-table .MuiTableCell-root {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .inventory-table .MuiIconButton-root {
+    margin: 0 5px;
+  }
+  
